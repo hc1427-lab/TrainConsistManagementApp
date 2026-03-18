@@ -1,13 +1,19 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
 
 public class TrainConsistManagementApp {
-    public static void main(String[] args){
-        System.out.println("=====================================");
-        System.out.println("Train Consist Management App");
-        System.out.println("=====================================");
-        List<String> TrainConsist=new ArrayList<String>();
-        System.out.println("Train Initialized Successfully.....");
 
+    public static void main(String[] args) {
+
+
+        HashSet<String> bogieIDs = new HashSet<>();
+
+        bogieIDs.add("BG101");
+        bogieIDs.add("BG102");
+        bogieIDs.add("BG103");
+        bogieIDs.add("BG101");
+        bogieIDs.add("BG102");
+
+        System.out.println("Unique Bogie IDs in Train:");
+        System.out.println(bogieIDs);
     }
 }
